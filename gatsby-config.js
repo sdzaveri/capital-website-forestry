@@ -20,14 +20,6 @@ module.exports = {
         icon: `src/images/favicon.png` // This path is relative to the root of the site.
       }
     },
-    // This package needs git to install, lets dump it for now
-    // {
-    //   resolve: `gatsby-plugin-favicon`,
-    //   options: {
-    //     logo: "./src/images/favicon.png",
-    //   }
-    // },
-    // Load typescript
     'gatsby-plugin-typescript',
     {
       resolve: `gatsby-source-filesystem`,
@@ -57,12 +49,6 @@ module.exports = {
         defaultLayouts: {
           default: require.resolve("./src/components/Layouts/LayoutMDX.tsx"),
         },
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-netlify-cms',
-      options: {
-        modulePath: `${__dirname}/src/cms/cms.js`,
       },
     }
   ]
