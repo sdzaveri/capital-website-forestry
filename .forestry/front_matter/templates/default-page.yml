@@ -1,4 +1,33 @@
 ---
 label: Default Page
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+  description: Page title
+- name: description
+  type: text
+  config:
+    required: false
+  label: Description
+  description: Page description
+- name: active_tab
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - overview
+    - patterns
+    - " styles"
+    - " guidelines"
+    - components
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Active Tab
